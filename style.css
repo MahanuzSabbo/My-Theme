@@ -1,0 +1,91 @@
+/*============================================
+Theme Name: Philosopy Theme
+Theme URI:
+Author: LWHH
+Author URI: https://learnwith.hasinhayder.com
+Description: Our First HyperMinimal Theme
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: blog, education
+Text Domain: Philosopy
+===========================*/
+/* @media (max-width: 768px) */
+/* General wrapper for logo and text */
+
+
+
+.site-footer {
+    margin: 0;
+    padding: 0;
+}
+.col-block popular__post{
+
+}
+.custom-logo-wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%; /* Ensures full-width alignment control */
+}
+
+/* Logo alignment classes */
+.logo-left {
+    justify-content: flex-start; /* Aligns logo and text to the left */
+}
+
+.logo-center {
+    justify-content: center; /* Centers logo and text */
+}
+
+.logo-right {
+    justify-content: flex-end; /* Aligns logo and text to the right */
+}
+
+/* Space between logo and text */
+.custom-logo-wrapper img {
+    margin-right: 10px; /* Adjust the spacing between the logo and the text */
+}
+
+.custom-logo-text {
+    font-size: 18px; /* Adjust font size as needed */
+    color: inherit; /* Inherits color from parent */
+}
+
+/* Responsive adjustments (optional) */
+
+
+
+ol, ul, li {
+    list-style: none;
+}
+
+ol, ul  {
+    list-style: none;
+}
+.header__nav li.menu-item-has-children > a::after {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+    content: '';
+    display: block;
+    height: 5px;
+    width: 5px;
+    margin-top: -4px;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    top: 21px;
+    -webkit-transform-origin: 66% 66%;
+    -ms-transform-origin: 66% 66%;
+    transform-origin: 66% 66%;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.header__nav li.menu-item-has-children:hover > a::after, .header__nav li.menu-item-has-children:focus > a::after {
+    -webkit-transform: rotate(225deg);
+    -ms-transform: rotate(225deg);
+    transform: rotate(225deg);
+}
+
